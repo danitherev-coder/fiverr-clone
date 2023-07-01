@@ -31,12 +31,12 @@ const ForgotPassword = () => {
     <div className="forgotpassword">
       {!isFormSubmitted ? ( // Verifica si el formulario ha sido enviado
         <form onSubmit={handleSubmit}>
-          <h2>Restablecer Contraseña</h2>
+          <h2>Reset Password</h2>
           <p style={{ color: "gray", fontWeight: "400" }}>
-            Debes introducir tu dirección de correo electrónico para que te
-            enviemos un enlace para restablecer tu contraseña.
+            You must enter your email address for us to send you a link to reset
+            your password.
           </p>
-          <label htmlFor="">Correo electrónico</label>
+          <label htmlFor="">E-mail address</label>
           <input
             name="email"
             type="email"
@@ -51,10 +51,10 @@ const ForgotPassword = () => {
           className="confirmation-message"
           style={{ marginTop: "100px", marginBottom: "100px" }}
         >
-          <h2>Se envió un correo para restablecer la contraseña</h2>
+          <h2>An email was sent to reset the password</h2>
           <p>
-            Por favor, revisa tu bandeja de entrada y sigue las instrucciones
-            para restablecer tu contraseña.
+            Please check your inbox and follow the instructions to reset your
+            password. to reset your password.
           </p>
         </div>
       )}

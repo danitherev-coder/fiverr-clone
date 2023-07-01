@@ -19,8 +19,8 @@ export const enviarEmail = async (datos) => {
         from: '"Fred Foo 👻" <foo@example.com>',
         to: email,
         subject: 'Confirmar Email',
-        html: `Hola ${username}, para confirmar tu cuenta necesitas dirigirte al enlace a continuacion
-            <p><a href='${process.env.BACKEND_URL}:${process.env.PORT_FRONTEND}/confirmar-email/${token}'>Seguir enlace</a></p>
+        html: `Hi ${username}, to confirm your account you need to go to the link below
+            <p><a href='${process.env.BACKEND_URL}:${process.env.PORT_FRONTEND}/confirmar-email/${token}'>Follow link</a></p>
         `,
     })
 
@@ -44,9 +44,9 @@ export const emailOlvidePassword = async (datos) => {
         from: '"Fred Foo 👻" <foo@example.com>',
         to: email,
         subject: 'Olvide Password',
-        html: `Hola ${username}, para restablecer su contraseña necesitas dirigirte al enlace a continuacion
-            <p><a href='${process.env.BACKEND_URL}:${process.env.PORT_FRONTEND}/olvide-password/${token}'>Restablecer password</a></p>
-            <p> Si tu no solicitaste el cambio de password, puede ignorar este mensaje</p>
+        html: `Hola ${username}, to reset your password you need to go to the link below
+            <p><a href='${process.env.BACKEND_URL}:${process.env.PORT_FRONTEND}/olvide-password/${token}'>Reset password</a></p>
+            <p> If you did not request a password change, you can ignore this message.</p>
         `,
     })
 
