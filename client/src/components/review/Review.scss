@@ -1,0 +1,96 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0px;
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .pp {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+
+    .country {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: gray;
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .stars {
+    display: flex;
+    gap: 5px;
+
+    img {
+      height: 14px;
+      width: 14px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffc108;
+    }
+  }
+
+  .helpful {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 14px;
+    }
+  }
+
+  // Estilos para pantallas más pequeñas
+  @media (max-width: 768px) {
+    .user {
+      gap: 5px;
+
+      .pp {
+        height: 40px;
+        width: 40px;
+      }
+
+      .country {
+        gap: 5px;
+
+        img {
+          width: 16px;
+        }
+      }
+    }
+
+    .stars {
+      gap: 3px;
+
+      img {
+        height: 12px;
+        width: 12px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .helpful {
+      gap: 5px;
+
+      img {
+        width: 12px;
+      }
+    }
+  }
+}

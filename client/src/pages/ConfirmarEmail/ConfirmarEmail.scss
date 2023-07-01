@@ -1,0 +1,26 @@
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  .confirmado {
+    text-align: center;
+    background-color: lightgreen;
+    padding: 20px;
+  }
+
+  .confirmado-text {
+    color: green;
+  }
+
+  .no-confirmado {
+    text-align: center;
+    background-color: lightcoral;
+    padding: 20px;
+  }
+
+  .no-confirmado-text {
+    color: black;
+  }
+}
